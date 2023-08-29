@@ -39,6 +39,12 @@ def Login(request):
             user = authenticate(email=email, password=password)
             if user is not None:
                 login(request, user)
+                obj={
+                    "id":user.id,
+                    "name":user.username,
+                    "email":user.email,
+                    "role":user.role
+                }
                 return JsonResponse({"msg": "login succesfull"})
         except User.DoesNotExist:
             return JsonResponse({"msg": "User Does Not exist"})
