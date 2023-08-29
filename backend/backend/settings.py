@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'user',
     'course',
     'enroll',
-    'assignment'
-    "corsheaders"
+    'assignment',
+    "corsheaders",
+    'submission'
 ]
 
 MIDDLEWARE = [

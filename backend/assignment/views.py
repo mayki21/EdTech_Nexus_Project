@@ -5,19 +5,17 @@ from .models import Assignment
 from enroll.models import Enroll
 import json
 
-
-
-def CreateAssignment(req, courseid):
+def CreateAssignment(req,courseid):
     if req.method == "POST":
-        user = req.user
-        if user.role == "student":
+        user=req.user
+        if user.role=="student":
             return JsonResponse({"msg":"not authorized"})
-        body = json.loads(req.body)
-        title = body.get('title')
-        description = body.get('description')
-        end_date = body.get('end_date')
-        course = Course.objects.get(id=courseid)
-        assignment = Assignment.objects.create(course=course,title=title,description=description,end_date=end_date)
+        body=json.loads(req.body)
+        title=body.get('title')
+        description=body.get('description')
+        end_date=body.get('end_date')
+        course=Course.objects.get(id=courseid)
+        assignment=Assignment.objects.create(course=course,title=title,description=description,end_date=end_date)
         return JsonResponse({"msg": "Assignment Created successully"})
     else:
         return JsonResponse({"msg":"some error occured"},status=404)

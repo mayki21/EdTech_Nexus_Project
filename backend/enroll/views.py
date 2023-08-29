@@ -7,17 +7,30 @@ User=get_user_model()
 # Create your views here.
 
 
+# def CreateEnrol(req,cid):
+#     if req.method=="POST":
+#         studentid=req.user.id
+#         user=User.objects.get(id=studentid)
+#         if user.role=="instructor":
+#             return JsonResponse({"msg":"you cannot enroll"})
+#         course=Course.objects.get(id=cid)
+#         enroll=Enroll.objects.create(student=user,course=course)
+#         return JsonResponse({"msg":"you have enrolled successfully"})
+#     else:
+#         return JsonResponse({"msg":"some error occured"})
+
 def CreateEnrol(req,cid):
     if req.method=="POST":
-        studentid=req.user.id
-        user=User.objects.get(id=studentid)
-        if user.role=="instructor":
-            return JsonResponse({"msg":"you cannot enroll"})
+        if req.user.role=="instructor":
+            return JsonResponse({"msg":"You cannot enroll"})
         course=Course.objects.get(id=cid)
-        enroll=Enroll.objects.create(student=user,course=course)
-        return JsonResponse({"msg":"you have enrolled successfully"})
+        alreadyenrol=Enroll.objects.filter(student=req.user,course=course)
+        if alreadyenrol:
+            return JsonResponse({"msg":"You have already enrolled"})
+        enroll=Enroll.objects.create(student=req.user,course=course)
+        return JsonResponse({"msg":"You have enrolled successfully"})
     else:
-        return JsonResponse({"msg":"some error occured"})
+        return JsonResponse({"msg":"some error occurred"})
 
 def getstudentenroldata(req):
     if req.method=="GET":
@@ -29,6 +42,7 @@ def getstudentenroldata(req):
             instructor=course.instructor
             obj={
                 "name":student.username,
+                "courseid":course.id,
                 "coursename":course.title,
                 "description":course.description,
                 "instructor":instructor.username,
