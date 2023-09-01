@@ -14,6 +14,8 @@ import { CoursenavbarComponent } from './components/coursenavbar/coursenavbar.co
 import { AssignmentComponent } from './pages/assignment/assignment.component';
 import { ParticularComponent } from './pages/particular/particular.component';
 import { InstructorComponent } from './pages/instructor/instructor.component';
+import { InstructorassignComponent } from './pages/instructorassign/instructorassign.component';
+import { CreateassignComponent } from './components/createassign/createassign.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { InstructorComponent } from './pages/instructor/instructor.component';
     CoursenavbarComponent,
     AssignmentComponent,
     ParticularComponent,
-    InstructorComponent
+    InstructorComponent,
+    InstructorassignComponent,
+    CreateassignComponent
   ],
   imports: [
     BrowserModule,
