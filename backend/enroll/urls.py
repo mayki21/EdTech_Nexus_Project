@@ -1,8 +1,7 @@
 from django.urls import path
-from .import views
+from . import views
 urlpatterns = [
-    path('createenrol/<int:cid>',views.CreateEnrol,name="createenrol"),
-    path('getenroldata',views.getstudentenroldata,name="getenroldata"),
-    path('getenrol',views.getenrol,name='getenrol')
-    
+    path('createenrol/<int:courseID>',views.createEnrol,name="createenrol"),
+    path('getenroldata',views.GetStudentEnrolData,name="getenroldata"),
+    path('getenrol',views.GetEnrol,name='getenrol')  
 ]
