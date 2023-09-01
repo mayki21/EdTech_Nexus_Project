@@ -46,3 +46,13 @@ def GetCourse(req):
         return JsonResponse({"data": course_data})
     else:
         return JsonResponse({"msg": "Invalid request"}, status=405)
+
+def getCourseByID(req):
+    if (req.method == "GET"):
+        userid=req.userid
+        instructor=User.objects.get(id=userid)
+        instructorcourses=Course.objects.filter(instructor=instructor)
+        data={"data":list(instructorcourses.values())}
+        return JsonResponse(data)
+    else:
+        return JsonResponse({"msg": "Invalid Request"}, status=405)
