@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.contrib.auth import get_user_model 
+from django.contrib.auth import get_user_model
 from django.http import JsonResponse
 from .models import Enroll
 from course.models import Course
@@ -7,56 +7,67 @@ User=get_user_model()
 # Create your views here.
 
 
-# def CreateEnrol(req,cid):
-#     if req.method=="POST":
-#         studentid=req.user.id
-#         user=User.objects.get(id=studentid)
-#         if user.role=="instructor":
-#             return JsonResponse({"msg":"you cannot enroll"})
-#         course=Course.objects.get(id=cid)
-#         enroll=Enroll.objects.create(student=user,course=course)
-#         return JsonResponse({"msg":"you have enrolled successfully"})
-#     else:
-#         return JsonResponse({"msg":"some error occured"})
 
-def CreateEnrol(req,cid):
-    if req.method=="POST":
-        if req.user.role=="instructor":
-            return JsonResponse({"msg":"You cannot enroll"})
-        course=Course.objects.get(id=cid)
-        alreadyenrol=Enroll.objects.filter(student=req.user,course=course)
-        if alreadyenrol:
-            return JsonResponse({"msg":"You have already enrolled"})
-        enroll=Enroll.objects.create(student=req.user,course=course)
-        return JsonResponse({"msg":"You have enrolled successfully"})
+def createEnrol(req,courseID):
+    if (req.method == "POST"):
+        userid = req.userid
+        user=User.objects.get(id=userid)
+        print(user)
+        if user.role == "student":
+            course = Course.objects.get(id=courseID)
+            alreadyEnrolled=Enroll.objects.filter(student=user,course=course).exists()
+            # print(alreadyenrol)
+            # print(course)
+            if alreadyEnrolled:
+                return JsonResponse({"msg": "You Have Already Enrolled"})
+            data = Enroll.objects.create(
+                student=user, course=course
+            )
+            return JsonResponse({"msg": "Enrollment Added Succesfully"}, status=201)
+        else:
+            return JsonResponse({"msg": "You Are Not Authorized"})
     else:
-        return JsonResponse({"msg":"some error occurred"})
+        return JsonResponse({"msg": "Invalid Request"}, status=405)
 
-def getstudentenroldata(req):
-    if req.method=="GET":
-        student=req.user
-        enroldata=Enroll.objects.filter(student=student)
-        serialize_data=[]
+
+
+
+
+
+
+
+    
+def GetStudentEnrolData(req):
+    student = User.objects.get(id=req.userid)
+    print(student)
+    print(student)
+    if req.method == "GET":
+        enroldata = Enroll.objects.filter(student=student)
+
+        serialized_data = []
+
         for enrol in enroldata:
-            course=enrol.course
-            instructor=course.instructor
-            obj={
-                "name":student.username,
+            course = enrol.course
+            instructor = course.instructor
+            data = {
+                "name": student.username,
                 "courseid":course.id,
-                "coursename":course.title,
-                "description":course.description,
-                "instructor":instructor.username,
-                "date":enrol.enrollmentdate
+                "image":course.image,
+                "coursename": course.title,
+                "description": course.description,
+                "instructor": instructor.username,
+                "date": enrol.enrollmentdate
             }
 
-            serialize_data.append(obj)
+            serialized_data.append(data)
 
-        return JsonResponse({"data":serialize_data})
+        return JsonResponse({"data": serialized_data})
     else:
-        return JsonResponse({"msg":"some error occured"})
+        return JsonResponse({"msg": "Some error occurred"})
+    
+def GetEnrol(req):
+    Enroldata=Enroll.objects.all()
+    data={"data":list(Enroldata.values())}
 
-
-def getenrol(req):
-    enroldata=Enroll.objects.all()
-    data={"data":list(enroldata.values())}
     return JsonResponse(data)
+

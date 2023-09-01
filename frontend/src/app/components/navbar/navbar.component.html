@@ -8,9 +8,20 @@
         <input type="text" class="w-full px-4 py-2 rounded-full bg-gray-100 focus:outline-none" placeholder="Search">
     </div>
     <div class="space-x-2">
-        <button class="  px-4 py-2 rounded-md hover:bg-gray-200">Teach On LearnHub</button>
-        <button class=" px-4 py-2 rounded-md hover:bg-gray-200">Student Portal</button>
-        <button class=" px-4 py-2 rounded-md hover:bg-gray-200">Login/Signup</button>
+        <button class="  px-4 py-2 rounded-md hover:bg-gray-200 font-bold">Teach On LearnHub</button>
+        <button *ngIf="!toggleLogin" class=" px-4 py-2 rounded-md hover:bg-gray-200 font-bold">Udemy Business</button>
+        <a *ngIf="toggleLogin" href="/course" class=" px-4 py-2 rounded-md hover:bg-gray-200 font-bold">My Learnings</a>
+        <a
+        href="#"
+        class="text-amber-950 font-bold text-xl link_hover py-1 px-1"
+        >{{ showname }}</a
+      >
+      <button
+        (click)="toggleLogin ? logout() : rigisterRoute()"
+        class="px-4 py-2 rounded-md hover:bg-gray-200 font-bold"
+      >
+        {{ toggleLogin ? "LOGOUT" : "Login/Signup" }}
+      </button>
     </div>
 </nav>
 <br>
@@ -20,79 +31,6 @@
 </div>
 
 
-<div class="mt-8 px-4">
-    <h2 class="text-2xl font-semibold mb-4">Featured Courses</h2>
-    <div class="flex flex-wrap -mx-4">
-        <!-- Course 1 -->
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        <div class="w-1/4 px-4 mb-4">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="https://i.insider.com/61040663ea74d40019b9d47a?width=700" alt="Course 1" class="h-40 w-full object-cover rounded-md">
-                <h3 class="mt-2 text-lg font-semibold">Course Title 1</h3>
-                <p class="text-gray-500">Course description goes here.</p>
-                <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Enroll</button>
-            </div>
-        </div>
-        
-        <!-- Add more course cards here -->
-    </div>
-</div>
-
 
             
                 
@@ -101,6 +39,3 @@
                 
             
             
-
-
-
