@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InstructorComponent } from './pages/instructor/instructor.component';
-import { InstructorassignComponent } from './pages/instructorassign/instructorassign.component';
+// import { InstructorComponent } from './pages/instructor/instructor.component';
+// import { InstructorassignComponent } from './pages/instructorassign/instructorassign.component';
 // import { HomeComponent } from './pages/home/home.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -18,8 +18,8 @@ const routes: Routes = [
   {path:'course',component:StudentenrollComponent},
   {path:'assignment',component:AssignmentComponent},
   {path:'particular',component:ParticularComponent},
-  {path:'instructor',component:InstructorComponent},
-  {path:'instructorassign',component:InstructorassignComponent}
+  // {path:'instructor',component:InstructorComponent},
+  // {path:'instructorassign',component:InstructorassignComponent}
 
 ];
 

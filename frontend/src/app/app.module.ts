@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoursenavbarComponent } from './components/coursenavbar/coursenavbar.component';
 import { AssignmentComponent } from './pages/assignment/assignment.component';
 import { ParticularComponent } from './pages/particular/particular.component';
+import { InstructorComponent } from './pages/instructor/instructor.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ParticularComponent } from './pages/particular/particular.component';
     StudentenrollComponent,
     CoursenavbarComponent,
     AssignmentComponent,
-    ParticularComponent
+    ParticularComponent,
+    InstructorComponent
   ],
   imports: [
     BrowserModule,
