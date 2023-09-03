@@ -18,6 +18,7 @@ import { InstructorassignComponent } from './pages/instructorassign/instructoras
 import { CreateassignComponent } from './components/createassign/createassign.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { UserprofileComponent } from './pages/userprofile/userprofile.component';
+import { MidsectionComponent } from './components/midsection/midsection.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { UserprofileComponent } from './pages/userprofile/userprofile.component'
     CreateassignComponent,
     LoaderComponent,
     UserprofileComponent,
+    MidsectionComponent,
     
   ],
   imports: [
