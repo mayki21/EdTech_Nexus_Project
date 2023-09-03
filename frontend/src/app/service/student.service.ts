@@ -56,8 +56,8 @@ export class StudentService {
     let headers=new HttpHeaders({
       Authorization: `Bearer ${this.token}`
     })
-    const url=`${this.url}/sub/submit/${id}`
-    return this.http.post(url,obj,{headers})
+    const url=`${this.url}/submission/submit/${id}`
+    return this.http.post<any>(url,obj,{headers})
 
   }
 

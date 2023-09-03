@@ -8,13 +8,16 @@ import { StudentService } from 'src/app/service/student.service';
 })
 export class AssignmentComponent implements OnInit{
   datas:any[]=[]
+  isloading:boolean=true
   constructor(private studentService:StudentService,private router:Router){}
   ngOnInit(): void {
     this.allAssignments()
   }
   allAssignments(){
     this.studentService.getAllassignment().subscribe((res)=>{
+      
       this.datas=res.data
+      this.isloading=false
     })
   }
 
@@ -22,5 +25,7 @@ export class AssignmentComponent implements OnInit{
     localStorage.setItem('id',id)
     this.router.navigate(['/particular'])
   }
+
+  
 
 }
