@@ -16,6 +16,9 @@ import { ParticularComponent } from './pages/particular/particular.component';
 import { InstructorComponent } from './pages/instructor/instructor.component';
 import { InstructorassignComponent } from './pages/instructorassign/instructorassign.component';
 import { CreateassignComponent } from './components/createassign/createassign.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { UserprofileComponent } from './pages/userprofile/userprofile.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { CreateassignComponent } from './components/createassign/createassign.co
     ParticularComponent,
     InstructorComponent,
     InstructorassignComponent,
-    CreateassignComponent
+    CreateassignComponent,
+    LoaderComponent,
+    UserprofileComponent,
+    
   ],
   imports: [
     BrowserModule,

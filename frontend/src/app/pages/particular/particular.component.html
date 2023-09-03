@@ -1,6 +1,16 @@
 <app-navbar></app-navbar>
 <app-coursenavbar></app-coursenavbar>
-<div class="min-h-screen flex items-center justify-center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="flex justify-center items-start">
+  <app-loader [isloading]="isloading"></app-loader>
+</div>
+<div class="min-h-screen flex items-center justify-center" *ngIf="!isloading">
     <div class="w-1/2 p-8 bg-white dark:bg-gray-800 shadow-md rounded-lg">
         <label for="" class="text-xl font-bold">Assignment Title:</label>
       <h1 class="text-3xl font-semibold mb-4">{{ data.title }}</h1>
@@ -13,8 +23,8 @@
       </div>
   
       <label class="block mb-2 font-semibold text-gray-700 dark:text-gray-300" for="link">Submit Your Link:</label>
-      <input type="text" id="link" class="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-700 dark:text-gray-300">
+      <input type="text" id="link" class="w-full p-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-700 dark:text-gray-300" [(ngModel)]="link">
   
-      <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
+      <button  (click)="HandleClick(data.id)" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
     </div>
   </div>
