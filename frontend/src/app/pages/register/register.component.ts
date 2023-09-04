@@ -1,6 +1,8 @@
+import { User } from './../../models/all.model';
 import { Component } from '@angular/core';
 import { StudentService } from 'src/app/service/student.service';
 import { Router } from '@angular/router';
+
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-register',
@@ -14,7 +16,8 @@ export class RegisterComponent {
   isloading!:boolean
   constructor(private studentService:StudentService,private router:Router){}
   HandleSubmit(){
-    let obj={
+    this.isloading=true
+    let obj:User={
       username:this.username,
       email:this.email,
       password:this.password

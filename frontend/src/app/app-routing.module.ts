@@ -10,6 +10,10 @@ import { StudentenrollComponent } from './pages/studentenroll/studentenroll.comp
 import { AssignmentComponent } from './pages/assignment/assignment.component';
 import { ParticularComponent } from './pages/particular/particular.component';
 import { UserprofileComponent } from './pages/userprofile/userprofile.component';
+import { AnnouncementComponent } from './pages/announcement/announcement.component';
+import { GetannouncementComponent } from './pages/getannouncement/getannouncement.component';
+import { CannouncementComponent } from './components/cannouncement/cannouncement.component';
+
 
 
 const routes: Routes = [
@@ -23,6 +27,9 @@ const routes: Routes = [
   {path:'instructor',component:InstructorComponent},
   {path:'instructorassign',component:InstructorassignComponent},
   {path:'userprofile',component:UserprofileComponent},
+  {path:'announcement',component:AnnouncementComponent},
+  {path:'getannouncement',component:GetannouncementComponent},
+  {path:'createannouncement',component:CannouncementComponent}
  
 
 ];
