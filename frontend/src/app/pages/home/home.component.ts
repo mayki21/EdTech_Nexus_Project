@@ -9,7 +9,7 @@ import { Course } from 'src/app/models/all.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-  datas:any[]=[]
+  datas:Course[]=[]
   isloading:boolean=true
 
   constructor(private instructorService:InstructorService,private studentService:StudentService){}

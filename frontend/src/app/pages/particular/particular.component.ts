@@ -1,14 +1,14 @@
 import { Component,OnInit } from '@angular/core';
 import { StudentService } from 'src/app/service/student.service';
 import Swal from 'sweetalert2';
-
+import { Assingment, Submission } from 'src/app/models/all.model';
 @Component({
   selector: 'app-particular',
   templateUrl: './particular.component.html',
   styleUrls: ['./particular.component.css']
 })
 export class ParticularComponent  implements OnInit{
-  data:any={}
+  data!:any
    assid=localStorage.getItem('id')
    link!:string
    isloading:boolean=true
@@ -18,7 +18,7 @@ export class ParticularComponent  implements OnInit{
   }
 
   getassignment(){
-    this.studentService.getParticular(this.assid).subscribe((res)=>{
+    this.studentService.getParticular(this.assid).subscribe((res:{data:Assingment})=>{
       console.log(res)
       this.data=res.data
       this.isloading=false
@@ -26,7 +26,7 @@ export class ParticularComponent  implements OnInit{
   }
 
   HandleClick(id:number){
-    let obj={
+    let obj:Submission={
       submission_link:this.link
     }
     this.studentService.SubmitAssign(obj, id).subscribe((res) => {

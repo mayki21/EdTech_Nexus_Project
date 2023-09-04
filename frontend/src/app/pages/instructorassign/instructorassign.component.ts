@@ -3,6 +3,7 @@ import { InstructorService } from 'src/app/service/instructor.service';
 // import { NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { Assingment } from 'src/app/models/all.model';
+import { windowWhen } from 'rxjs';
 
 
 @Component({
@@ -30,7 +31,9 @@ export class InstructorassignComponent implements OnInit{
   }
   HandleClick(id:any){
     localStorage.setItem('subid',id)
-    this.router.navigate(['/submission'])
+    this.router.navigate(['/submission']).then(()=>{
+      window.location.reload()
+    })
 
   }
 
