@@ -19,6 +19,14 @@ import { CreateassignComponent } from './components/createassign/createassign.co
 import { LoaderComponent } from './components/loader/loader.component';
 import { UserprofileComponent } from './pages/userprofile/userprofile.component';
 import { MidsectionComponent } from './components/midsection/midsection.component';
+import { AnnouncementComponent } from './pages/announcement/announcement.component';
+import { GetannouncementComponent } from './pages/getannouncement/getannouncement.component';
+import { CannouncementComponent } from './components/cannouncement/cannouncement.component';
+import { BoxComponent } from './components/box/box.component';
+import { BrandingComponent } from './components/branding/branding.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InstrnavbarComponent } from './components/instrnavbar/instrnavbar.component';
+
 
 
 @NgModule({
@@ -39,13 +47,21 @@ import { MidsectionComponent } from './components/midsection/midsection.componen
     LoaderComponent,
     UserprofileComponent,
     MidsectionComponent,
+    AnnouncementComponent,
+    GetannouncementComponent,
+    CannouncementComponent,
+    BoxComponent,
+    BrandingComponent,
+    InstrnavbarComponent,
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
 
   ],
   providers: [],

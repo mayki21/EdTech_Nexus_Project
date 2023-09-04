@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { StudentService } from 'src/app/service/student.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { User } from 'src/app/models/all.model';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,7 +14,8 @@ export class LoginComponent {
   isloading!: boolean
   constructor(private studentService:StudentService,private router:Router){}
   HandleSubmit(){
-    let obj={
+    this.isloading=true
+    let obj:User={
       email:this.email,
       password:this.password
     }
