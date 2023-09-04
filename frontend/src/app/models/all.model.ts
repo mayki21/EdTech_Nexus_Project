@@ -6,7 +6,7 @@ export interface User{
 }
 
 export interface Course{
-    id?:number
+    id?:any
     image:string
     instructor?:any
     title:string
@@ -28,5 +28,28 @@ export interface Assingment{
     start_date?:string
     end_date:string
     assignmentid?:number
+
+}
+export interface Submission {
+    id?: number,
+    studentid?: number,
+    studentname?: string,
+    instructorname?: string,
+    coursename?: string,
+    submission_date?: string,
+    submission_link: string,
+    student?: any,
+    assignment?: any
+}
+
+export interface Announcement {
+    id?: number,
+    announcementid?: number,
+    coursename?: string,
+    title: string,
+    content: string,
+    announcement_date?: string,
+    instructor_name?: string,
+    course?:Course,
 
 }

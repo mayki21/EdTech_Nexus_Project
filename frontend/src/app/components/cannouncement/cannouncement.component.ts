@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { Announcement } from 'src/app/models/all.model';
 import { InstructorService } from 'src/app/service/instructor.service';
 @Component({
   selector: 'app-cannouncement',
@@ -10,14 +11,14 @@ export class CannouncementComponent implements OnInit{
   title!:string
   content!:string
   courseid:number|string=""
-  datas:any[]=[]
+  datas:Announcement[]=[]
   constructor(private instructorService:InstructorService){}
   ngOnInit(): void {
     this.datas=JSON.parse(localStorage.getItem("instructordata")||'[]')
   }
   
   HandleSubmit(){
-    let obj={
+    let obj:Announcement={
       title:this.title,
       content:this.content
     }

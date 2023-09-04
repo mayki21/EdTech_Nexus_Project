@@ -26,6 +26,7 @@ import { BoxComponent } from './components/box/box.component';
 import { BrandingComponent } from './components/branding/branding.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InstrnavbarComponent } from './components/instrnavbar/instrnavbar.component';
+import { SubmissionComponent } from './pages/submission/submission.component';
 
 
 
@@ -53,6 +54,7 @@ import { InstrnavbarComponent } from './components/instrnavbar/instrnavbar.compo
     BoxComponent,
     BrandingComponent,
     InstrnavbarComponent,
+    SubmissionComponent,
     
     
   ],

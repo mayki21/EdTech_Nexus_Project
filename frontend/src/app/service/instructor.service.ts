@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { Assingment, Course } from '../models/all.model';
+
+import { Announcement, Assingment, Course, Submission } from '../models/all.model';
 
 @Injectable({
   providedIn: 'root'
@@ -43,11 +44,34 @@ export class InstructorService {
     return this.http.post<any>(url,obj,{headers})
 
   }
-  CreateAnnouncement(obj:any,id:any):Observable<any>{
+  // CreateAnnouncement(obj:any,id:any):Observable<any>{
+  //   let headers=new HttpHeaders({
+  //     Authorization:`Bearer ${this.token}`
+  //   })
+  //   const url=`${this.url}/announcement/create/${id}`
+  //   return this.http.post(url,obj,{headers})
+  // }
+  SeeSubmission(id:any):Observable<{data:Submission[]}>{
+    let headers=new HttpHeaders({
+      Authorization:`Bearer ${this.token}`
+    })
+    const url=`${this.url}/sub/seeallsub/${id}`
+    return this.http.get<{data:Submission[]}>(url,{headers})
+  }
+  CreateAnnouncement(obj:Announcement,id:any):Observable<any>{
     let headers=new HttpHeaders({
       Authorization:`Bearer ${this.token}`
     })
     const url=`${this.url}/announcement/create/${id}`
     return this.http.post(url,obj,{headers})
   }
+
+  createCoursedata(obj:Course):Observable<any>{
+    let headers=new HttpHeaders({
+      Authorization:`Bearer ${this.token}`
+    })
+    const url=`${this.url}/course/create`
+    return this.http.post<any>(url,obj,{headers})
+  }
+
 }
