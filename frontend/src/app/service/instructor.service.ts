@@ -10,7 +10,7 @@ import { Announcement, Assingment, Course, Submission } from '../models/all.mode
 export class InstructorService {
 
   token:string=localStorage.getItem("token")||""
-  private url="http://localhost:8000"
+  private url="https://edtech-backend-x3ix.onrender.com"
   id!:number
   
   constructor(private http:HttpClient) { }
