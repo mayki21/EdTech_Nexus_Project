@@ -31,9 +31,22 @@ export class LoginComponent {
           'text': 'You have Login Successfully'
         })
         setTimeout(() => {
-          this.router.navigate(['/'])
+          // this.router.navigate(['/'])
+          if(res.user.role=="instructor")
+          {
+            this.router.navigate(['/instructor']).then(()=>{
+              window.location.reload()
+            })
+          }
+          else
+          {
+            this.router.navigate(['/']).then(()=>{
+              window.location.reload()
+            })
+          }
         }, 2000);
-      } else {
+      } 
+      else {
         this.isloading = false
         Swal.fire({
           'icon': 'error',
