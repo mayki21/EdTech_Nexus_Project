@@ -56,3 +56,19 @@ def getCourseByID(req):
         return JsonResponse(data)
     else:
         return JsonResponse({"msg": "Invalid Request"}, status=405)
+
+
+def homeroute(req):
+    return JsonResponse({"msg":"home route is hit"})
+
+def getChatResponse(req):
+    if req.method == "GET":
+        str = ""
+        courses = Course.objects.all()
+
+        for item in courses:
+            str += f"title:{item.title},description :{item.description}"
+
+        return JsonResponse({"data": str})
+    else:
+        return JsonResponse({"msg": 'Invalid Request'})

@@ -28,6 +28,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InstrnavbarComponent } from './components/instrnavbar/instrnavbar.component';
 import { SubmissionComponent } from './pages/submission/submission.component';
 import { CreatecourseComponent } from './components/createcourse/createcourse.component';
+import { ChatbotComponent } from './components/chatbot/chatbot.component';
 
 
 
@@ -58,7 +59,8 @@ import { CreatecourseComponent } from './components/createcourse/createcourse.co
     InstrnavbarComponent,
     SubmissionComponent,
     CreatecourseComponent,
-    InstrnavbarComponent
+    InstrnavbarComponent,
+    ChatbotComponent
 
     
     

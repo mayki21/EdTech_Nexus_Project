@@ -12,7 +12,7 @@
     <hr>
     <div class="flex flex-wrap -mx-4">
         <!-- Course 1 -->
-        <div *ngFor="let data of datas" class="w-1/4 px-4 mb-4">
+        <div *ngFor="let data of datas" class="w-1/4 px-4 mb-4 animate__animated animate__zoomIn">
             <div class="bg-white rounded-lg shadow-md p-4">
                 <img [src]="data.image">
                 <h3 class="mt-2 text-lg font-semibold">{{data.title}}</h3>
@@ -23,5 +23,6 @@
         </div>
    </div>
 </div>
+<app-chatbot></app-chatbot>
 <app-branding></app-branding>
 <app-footer></app-footer>

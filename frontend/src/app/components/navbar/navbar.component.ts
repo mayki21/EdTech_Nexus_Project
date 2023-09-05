@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import Swiper from 'swiper';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -43,7 +44,11 @@ export class NavbarComponent {
     localStorage.removeItem('token');
     this.showname = '';
     this.toggleLogin = false;
-    alert('Logout Succesfully');
+    Swal.fire({
+      'icon':'success',
+      'title':'Logout Successful',
+      'text':'You have Logout Succesfully'
+    })
     window.location.reload();
   }
 
