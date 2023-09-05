@@ -1,18 +1,18 @@
-<!-- announcements.component.html -->
+
 <div class="bg-gray-100">
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto">
+    <header class="bg-gray-400 text-white py-4">
+        <div class="container mx-auto text-center">
             <h1 class="text-2xl font-bold">All Announcements</h1>
         </div>
     </header>
-    <div class="flex justify-center items-start">
+    <div class="flex justify-center items-start mt-8">
         <app-loader [isloading]="isloading"></app-loader>
     </div>
     <div class="container mx-auto mt-6">
         <div>
             <div class="-mx-4">
-                <div *ngFor="let data of datas" class="w-full px-4 mb-2">
-                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-between"
+                <div *ngFor="let data of datas" class="w-full px-4 mb-6">
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-between transition-transform transform hover:scale-105"
                         (click)="HandleClick(data)">
                         <div>
                             <h2 class="text-xl font-semibold mb-3">{{ data.title }}</h2>
