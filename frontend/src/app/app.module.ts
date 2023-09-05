@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -27,6 +27,8 @@ import { BrandingComponent } from './components/branding/branding.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InstrnavbarComponent } from './components/instrnavbar/instrnavbar.component';
 import { SubmissionComponent } from './pages/submission/submission.component';
+import { CreatecourseComponent } from './components/createcourse/createcourse.component';
+
 
 
 
@@ -55,6 +57,9 @@ import { SubmissionComponent } from './pages/submission/submission.component';
     BrandingComponent,
     InstrnavbarComponent,
     SubmissionComponent,
+    CreatecourseComponent,
+    InstrnavbarComponent
+
     
     
   ],
@@ -63,7 +68,8 @@ import { SubmissionComponent } from './pages/submission/submission.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
