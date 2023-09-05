@@ -26,7 +26,7 @@ LearnHub is more than just a Learning Management System; it's a dynamic educatio
 
 ## Features
 
-- *AI-Powered Chatbot:* BrainBridge integrates AI, thanks to OpenAI functions, to provide a personalized learning experience. Our chatbot understands your queries and guides you through your courses.
+- *AI-Powered Chatbot:* LearnHub integrates AI, thanks to OpenAI functions, to provide a personalized learning experience. Our chatbot understands your queries and guides you through your courses.
 
 - *Student-Centric:* Students can easily register and enroll in multiple courses. No more cumbersome processes. It's just a few clicks to get started on your learning journey.
 
