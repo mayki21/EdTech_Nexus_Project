@@ -10,7 +10,6 @@ Welcome to LearnHub, your gateway to a modern and efficient Learning Management 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
-- [Deployment](#deployment)
 - [Learning Journey](#learning-journey)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
@@ -65,9 +64,6 @@ Ready to experience the future of learning? Follow these simple steps:
 
 4. *Launch BrainBridge:* Run the app, and start exploring the world of enhanced learning.
 
-## Contributing
-
-We welcome contributions to make LearnHub even better. Please check our [contribution guidelines](CONTRIBUTING.md) to get started.
 
 ## License
 
