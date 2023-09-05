@@ -26,11 +26,11 @@ export class HomeComponent implements OnInit{
 
   HandleClick(id:number){
     this.studentService.enrolCourse(id).subscribe((res)=>{
-      if(res.msg=="You have enrolled successfully"){
+      if(res.msg=="Enrollment Added Succesfully"){
         Swal.fire({
           'icon':'success',
           'title':`${res.msg}`,
-          'text':'You have enrolled Successfully'
+          'text':'You have Enrolled Successfully'
         })
         console.log(res)
       }else{
