@@ -5,6 +5,7 @@ Welcome to LearnHub, your gateway to a modern and efficient Learning Management 
 ![aicapture](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/9efe1105-9e4d-43f4-a544-d1fd7a65c636)
 
 
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
@@ -18,6 +19,11 @@ Welcome to LearnHub, your gateway to a modern and efficient Learning Management 
 ## Introduction
 
 LearnHub is more than just a Learning Management System; it's a dynamic educational platform that bridges the gap between students and instructors. With the power of AI and a stack of technologies learned within 30 days, we've crafted a solution that takes your learning experience to the next level.
+
+
+## ER Diagram:
+
+![WhatsApp Image 2023-09-05 at 6 35 10 PM](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/cd5209f2-7b77-4f21-9218-1504cac0c7ce)
 
 ## Features
 
