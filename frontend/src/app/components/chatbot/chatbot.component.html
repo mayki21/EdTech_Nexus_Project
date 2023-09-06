@@ -1,7 +1,7 @@
 
 <div class="fixed right-8 bottom-8" (click)="toggleChat()">
     <button
-      class="text-lg button_pink bg-black text-white font-bold py-2 px-4 rounded-full shadow-lg"
+      class="text-lg button_pink bg-gray-300 text-white font-bold py-2 px-4 rounded-full shadow-lg"
     >
       Chat
       <fa-icon [icon]="chat"></fa-icon>
@@ -9,7 +9,7 @@
   </div>
   <div
     *ngIf="showChat"
-    class="bg-black fixed bottom-20 right-0 h-96 w-96 p-4 col border border-gray-300 rounded-t-lg shadow-lg"
+    class="bg-gray-400 fixed bottom-20 right-0 h-96 w-96 p-4 col border border-gray-300 rounded-t-lg shadow-lg"
   >
     <div class="flex flex-col space-y-2 h-72 overflow-y-auto">
       <div
@@ -18,7 +18,7 @@
         #chatMessagesRef
         [ngClass]="{
           'self-start bg-gray-200': message.sender === 'user',
-          'self-end grayy text-white': message.sender === 'bot'
+          'self-end grayy text-gray-200': message.sender === 'bot'
         }"
       >
         {{ message.text }}
@@ -41,3 +41,46 @@
       </button>
     </div>
   </div>
+<!-- 
+  <div class="fixed right-8 bottom-8">
+    <button
+      class="text-lg bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-300"
+    >
+      Chat
+      <fa-icon [icon]="chat"></fa-icon>
+    </button>
+  </div>
+  <div
+    *ngIf="showChat"
+    class="bg-white fixed bottom-20 right-8 h-96 w-96 p-4 col border border-gray-300 rounded-lg shadow-lg"
+  >
+    <div class="flex flex-col space-y-3 h-72 overflow-y-auto">
+      <div
+        *ngFor="let message of chatMessages"
+        class="p-3 rounded-lg shadow-md max-w-md self-start"
+        [ngClass]="{
+          'bg-blue-100 text-blue-900': message.sender === 'user',
+          'bg-pink-500 text-white': message.sender === 'bot'
+        }"
+      >
+        {{ message.text }}
+      </div>
+    </div>
+  
+    <div class="flex space-x-3 mt-3">
+      <input
+        [(ngModel)]="userMessage"
+        (keyup.enter)="sendMessage()"
+        class="flex-1 p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none"
+        placeholder="Type your message..."
+        name="chatbot here"
+      />
+      <button
+        (click)="sendMessage()"
+        class="bg-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-300"
+      >
+        Send
+      </button>
+    </div>
+  </div> -->
+  
