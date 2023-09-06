@@ -69,7 +69,7 @@ export class StudentService {
     return this.http.get<{data:Announcement[]}>(url,{headers})
 
   }
-  urlhereChat='http://localhost:4000'
+  urlhereChat='https://chatbot-e0x8.onrender.com'
   chatbotResponse(userrequest: any): Observable<any> {
     console.log('Request Made');
     return this.http.post<any>(`${this.urlhereChat}/chat`, userrequest);
