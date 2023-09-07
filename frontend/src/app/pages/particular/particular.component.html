@@ -1,17 +1,12 @@
 <app-navbar></app-navbar>
 <app-coursenavbar></app-coursenavbar>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <div class="flex justify-center items-start">
   <app-loader [isloading]="isloading"></app-loader>
 </div>
+<h1 class="text-3xl font-bold text-center py-4">ASSIGNMENT SUBMISSION</h1>
 <div class="min-h-screen flex items-center justify-center animate__animated animate__zoomIn" *ngIf="!isloading">
-    <div class="w-1/2 p-8 bg-white dark:bg-gray-800 shadow-md rounded-lg">
+    <div class="w-1/2 p-8 bg-gray-400 dark:bg-gray-800 shadow-md rounded-lg">
         <label for="" class="text-xl font-bold">Assignment Title:</label>
       <h1 class="text-3xl font-semibold mb-4">{{ data.title }}</h1>
       <label for="" class="text-xl font-bold">Assignment description:</label>

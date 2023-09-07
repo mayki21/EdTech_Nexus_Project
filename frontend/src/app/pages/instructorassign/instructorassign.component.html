@@ -12,10 +12,14 @@
     <app-loader [isloading]="isloading"></app-loader>
   </div>
 <!-- <app-instructorassign></app-instructorassign> -->
+<br>
+
+<h1 class="text-3xl font-bold py-10 text-center">Assignments</h1>
 <div class="flex flex-wrap mx-7">
     <!-- Course 1 -->
+    
     <div *ngFor="let data of datas" class="w-1/4 px-4 mb-4">
-        <div class="bg-white rounded-lg shadow-md hover:shadow-xl p-4">
+        <div class="bg-gray-300 rounded-lg shadow-md hover:shadow-3xl p-4">
             <h3 class="mt-2 text-lg font-semibold">{{data.title}}</h3>
             <p class="text-gray-500">{{data.description}}</p>
             <p class="text-gray-500">{{data.start_date|date:'medium'}}</p>
