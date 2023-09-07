@@ -48,9 +48,41 @@ Our journey to create BrainBridge involved diving into new technologies, all tha
 
 - *Deployment:* We chose Render for backend deployment and Node.js for the AI-powered chatbot, which is also deployed on Render.
 
+## Screen Shots
+
+![one](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/9d261c49-1ca3-4d93-9bee-b30cf873cb83)
+
+  
+![two](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/8e627cb7-3cc9-4ca2-989c-c502326c246e)
+
+![three](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/582913ea-269e-4d4f-842d-3ca47508d4f3)
+
+![four](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/d749ef1a-d3ef-4043-809b-1458a6e235c3)
+
+![five](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/46dd7345-6820-4c18-8691-d9ccc09a98ab)
+
+![six](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/5a7212eb-896f-4c8c-ae3d-d3cb11e0d684)
+
+![seven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/4198df7f-dce6-45b6-8c75-d87050a688b3)
+
+![eight](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/618fc133-b218-46ad-9d1b-b204bad0da0a)
+
+![nine](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/fc15e1b0-a69c-4298-b281-42e3f3ec6eb2)
+
+![ten](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/fb99a836-6618-4ba8-8964-a8a9fc82486a)
+
+![eleven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/b4a404dc-0a68-4cde-9c2a-dc9e945881b1)
+
+![twelve](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/4657752a-a12c-4dc1-abcf-189a34f3e7d2)
+
+![thirteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/d6c15e4d-0bca-47e6-968f-bb7c40776e78)
+
+![fourteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/40b1711d-c927-47c8-a8d5-ebe103a023ea)
+
+
 ## Learning Journey
 
-One of the remarkable aspects of BrainBridge is that we embraced a rapid learning curve. We mastered Django, Angular, and various technologies within 30 days, all thanks to the incredible capabilities of Generative AI. This project is a testament to the power of continuous learning and innovation.
+One of the remarkable aspects of LearnHub is that we embraced a rapid learning curve. We mastered Django, Angular, and various technologies within 30 days, all thanks to the incredible capabilities of Generative AI. This project is a testament to the power of continuous learning and innovation.
 
 ## Getting Started
 
