@@ -73,7 +73,9 @@ Our journey to create BrainBridge involved diving into new technologies, all tha
 ![eleven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/b4a404dc-0a68-4cde-9c2a-dc9e945881b1)
 
 ![twelve](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/4657752a-a12c-4dc1-abcf-189a34f3e7d2)
+
 ![thirteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/d6c15e4d-0bca-47e6-968f-bb7c40776e78)
+
 ![fourteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/40b1711d-c927-47c8-a8d5-ebe103a023ea)
 
 
