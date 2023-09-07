@@ -7,14 +7,14 @@
 </div>
 <div class="grid grid-cols-3 mt-3 gap-4">
     <div *ngFor="let data of datas"
-        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        class="max-w-sm p-6 bg-gray-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{data.title}}</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Start-Date- {{data.start_date| date:'medium'}}</p>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">End Date- {{data.end_date| date:'medium'}}</p>
         <button
-            class="py-2 font-bold rounded px-5 grayy text-white hover:outline-black hover:text-black button_pink hover:cursor-pointer"
+            class="bg-blue-400 py-2 font-bold rounded px-5 grayy text-black hover:outline-black hover:text-black button_pink hover:cursor-pointer"
             (click)="HandleClick(data.assignmentid)">
             View Assignment
         </button>
