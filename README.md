@@ -8,10 +8,10 @@ Welcome to LearnHub, your gateway to a modern and efficient Learning Management 
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [ER Diagram]
+- [ER Diagram](#erdiagram)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
-- [Screenshots]
+- [Screenshots](#screenshots)
 - [Learning Journey](#learning-journey)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
