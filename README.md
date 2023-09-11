@@ -2,8 +2,7 @@
 
 Welcome to LearnHub, your gateway to a modern and efficient Learning Management System. 🚀
 
-![aicapture](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/9efe1105-9e4d-43f4-a544-d1fd7a65c636)
-
+![aicapture](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/99ee07e6-53ea-4914-b075-b65c3a6de32a)
 
 
 ## Table of Contents
@@ -24,7 +23,7 @@ LearnHub is more than just a Learning Management System; it's a dynamic educatio
 
 ## ER Diagram:
 
-![WhatsApp Image 2023-09-05 at 6 35 10 PM](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/cd5209f2-7b77-4f21-9218-1504cac0c7ce)
+![WhatsApp Image 2023-09-05 at 6 35 10 PM](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/fba0d26d-3c38-40b8-ade7-5e8637f0ad27)
 
 ## Features
 
@@ -54,59 +53,70 @@ Our journey to create BrainBridge involved diving into new technologies, all tha
 
 # Landing Page
 
-![one](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/9d261c49-1ca3-4d93-9bee-b30cf873cb83)
+![one](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/f2682618-6998-4e1a-99e1-ef86f544dd79)
 
 # Featured Coures
 
-![two](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/8e627cb7-3cc9-4ca2-989c-c502326c246e)
+![two](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/f97cf601-fd0c-4352-821f-ebcdf63ab9f0)
+
 
 # Footer Section
 
-![three](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/582913ea-269e-4d4f-842d-3ca47508d4f3)
+![three](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/a0365d0c-17d1-4728-acde-04720773ebc4)
+
 
 # Instructor Dashboard
 
-![four](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/d749ef1a-d3ef-4043-809b-1458a6e235c3)
+![four](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/17364212-e108-4e08-813e-caf8f63fa61b)
+
 
 # Instructor's Create Assignment Page
 
-![five](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/46dd7345-6820-4c18-8691-d9ccc09a98ab)
+![five](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/b98ca7db-12a9-46a5-95a8-82c5fe5a400f)
+
 
 # Assignment 
 
-![six](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/5a7212eb-896f-4c8c-ae3d-d3cb11e0d684)
+![six](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/9515c8bf-7d98-40e0-a0bc-b92d30455f47)
+
 
 # Instructor's Create Course Page
 
-![seven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/4198df7f-dce6-45b6-8c75-d87050a688b3)
+![seven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/181a1fad-b6bf-470f-b07a-ee0c41ac094a)
+
 
 # Instructor's Create Announcement Page
 
-![eight](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/618fc133-b218-46ad-9d1b-b204bad0da0a)
+![eight](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/020854d6-c1c1-46bf-b521-c97043c66086)
+
 
 # Student's Dashboard
 
-![nine](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/fc15e1b0-a69c-4298-b281-42e3f3ec6eb2)
+![nine](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/60ce0adb-2705-4c24-839c-19b5aa30b44c)
+
 
 # Student's Assignment Page
 
-![ten](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/fb99a836-6618-4ba8-8964-a8a9fc82486a)
+![ten](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/28330fa7-66dc-4356-8bed-4d70485653fc)
+
 
 # Student's Assignment Submission Page
+![eleven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/f9ab50f9-1ba1-4a16-a485-6298a69acef2)
 
-![eleven](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/b4a404dc-0a68-4cde-9c2a-dc9e945881b1)
 
 # Annoucement Page
 
-![twelve](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/4657752a-a12c-4dc1-abcf-189a34f3e7d2)
+![twelve](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/03929946-72e8-4d44-b245-4c8aed046441)
+
+
+# AI Generated ChatBot
+![thirteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/13b8b4a4-df1f-4ee4-ad26-3f40ffce43fb)
+
 
 # AI Generated ChatBot
 
-![thirteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/d6c15e4d-0bca-47e6-968f-bb7c40776e78)
 
-# AI Generated ChatBot
-
-![fourteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/40b1711d-c927-47c8-a8d5-ebe103a023ea)
+![fourteen](https://github.com/mayki21/EdTech_Nexus_Project/assets/119392202/c6682385-0716-46f3-8221-a7a3abb933c7)
 
 
 ## Learning Journey
