@@ -16,6 +16,7 @@ import { CannouncementComponent } from './components/cannouncement/cannouncement
 import { authguardGuard } from './guards/authguard.guard';
 import { CreatecourseComponent } from './components/createcourse/createcourse.component';
 import { roleGuard } from './guards/role.guard';
+import { SubmissionComponent } from './pages/submission/submission.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path:'announcement',canActivate:[authguardGuard],component:AnnouncementComponent},
   {path:'getannouncement',canActivate:[authguardGuard],component:GetannouncementComponent},
   {path:'createannouncement',canActivate:[authguardGuard],component:CannouncementComponent},
-  {path:'createcourse',canActivate:[authguardGuard],component:CreatecourseComponent}
+  {path:'createcourse',canActivate:[authguardGuard],component:CreatecourseComponent},
+  {path:'submission',canActivate:[authguardGuard],component:SubmissionComponent}
 
  
 
