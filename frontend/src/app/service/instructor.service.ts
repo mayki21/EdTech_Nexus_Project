@@ -55,7 +55,7 @@ export class InstructorService {
     let headers=new HttpHeaders({
       Authorization:`Bearer ${this.token}`
     })
-    const url=`${this.url}/sub/seeallsub/${id}`
+    const url=`${this.url}/submission/seeallassign/${id}`
     return this.http.get<{data:Submission[]}>(url,{headers})
   }
   CreateAnnouncement(obj:Announcement,id:any):Observable<any>{
